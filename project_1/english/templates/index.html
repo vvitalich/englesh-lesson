@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Картинка</title>
+</head>
+    <body>
+        <h4>Picture</h4>
+        {% for world in world_list %}
+            <h5>{{ world.value_russ }} - {{ world.value_eng }}</h5>
+            <img src="{{ world.picture.url }}" alt="">
+        {% endfor %}
+    </body> 
+</html>
